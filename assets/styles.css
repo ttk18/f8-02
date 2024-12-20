@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary: #ffb900;
+    --p-color: #5f5b53;
+    --p-bold-color: #171100;
+    --font-heading: Sen, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* COMMON */
+a {
+    text-decoration: none;
+}
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 24px);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 50px;
+    min-width: 118px;
+    text-align: center;
+    color: #fff;
+    background-color: #171100;
+    border-radius: 24.5px;
+    font-weight: 600;
+}
+/* HEADER */
+header.header {
+    background-color: #fffcf4;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 32px 0 8px;
+}
+
+header.fixed {
+    position: sticky;
+    top: -24px;
+    z-index: 1;
+}
+
+nav.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.75;
+    padding: 8px 21px;
+    color: #5f5b53;
+}
+
+.nav a.active,
+.nav a:hover {
+    font-size: 16px;
+    text-shadow: 0.3px 0 0 #000;
+    color: #000;
+}
+
+.nav a.active::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    left: 21px;
+    bottom: 6px;
+    border-radius: 1px 0px 0px 0px;
+    position: absolute;
+    background-color: #171100;
+}
+
+.action {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-sign-up {
+    min-width: 144px;
+}
+
+/* HERO */
+
+/* HERO-LEFT */
+.hero {
+    padding: 64px 0 65px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .hero-img {
+    width: 49%;
+    position: relative;
+}
+
+.hero-img .img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.hero-img .info {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    background-color: #fff;
+    padding: 24px;
+    width: 270px;
+    border-radius: 12px;
+    box-shadow: 0px 16px 32px 0px #0000000d;
+}
+.hero-img .info .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-img .info .item + .item {
+    margin-top: 18px;
+}
+
+.hero-img .info .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #fff9e8;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.hero-img .info .item:nth-of-type(2) .icon {
+    background-color: #fcefff;
+}
+
+.hero-img .info .item:nth-of-type(3) .icon {
+    background-color: #ebeaff;
+}
+
+.hero-img .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: var(--p-color);
+}
+
+.hero-img .desc .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.68;
+    color: var(--p-bold-color);
+}
+/* HERO-RIGHT */
+.hero .hero-content {
+    margin-left: 130px;
+    width: 51%;
+}
+
+.hero-content .heading {
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--p-bold-color);
+    margin: 64px 0 22px;
+}
+
+.hero-content .desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--p-color);
+    margin-bottom: 38px;
+}
+.hero-cta {
+    display: flex;
+}
+.hero-cta .btn-cta {
+    background-color: var(--primary);
+    min-width: 180px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.hero-cta .watch-video {
+    background-color: transparent;
+    border: none;
+    margin-left: 28px;
+}
+
+.watch-video {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.68;
+    color: var(--p-bold-color);
+}
+
+.watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px #00000012;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.hero-content .desc.title {
+    margin: 48px 0 0;
+}
+
+.hero-content .desc.stats {
+    margin: 8px 0 0;
+}
+
+.hero-content .desc.stats strong {
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--p-bold-color);
+    padding-right: 8px;
+}
+
+.hero-content .desc.stats span + span {
+    margin-left: 28px;
+}
